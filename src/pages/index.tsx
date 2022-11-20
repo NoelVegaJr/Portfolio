@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import About from "../components/About";
 import WorkExperience from "../components/WorkExperience";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +30,7 @@ export default function Home() {
             <About />
             <WorkExperience />
             <Projects />
+            <Contact />
           </main>
         </div>
 
@@ -36,6 +39,7 @@ export default function Home() {
           <div className="h-32 w-0.5  bg-slate-400 " />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
