@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 interface IHeroSectionProps {}
@@ -17,9 +18,13 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
           and teams to easily document there code called{" "}
           <span className="text-teal-400 cursor-pointer">CodeFork</span>.
         </p>
-        <button className="border font-semibold border-teal-400 px-8 p-4 text-teal-400 w-fit rounded hover:bg-slate-800">
+        <Link
+          href="resume"
+          target="_blank"
+          className="border font-semibold border-teal-400 px-8 p-4 text-teal-400 w-fit rounded hover:bg-slate-800"
+        >
           Check out my resume
-        </button>
+        </Link>
       </div>
     </section>
   );

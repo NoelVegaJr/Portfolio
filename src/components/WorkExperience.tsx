@@ -23,7 +23,7 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
           <li
             className={`border-l ${
               active === "Relativity"
-                ? "border-l-teal-300"
+                ? "border-l-teal-300 text-teal-300"
                 : "border-l-slate-600"
             } px-8 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
             onClick={(e) => handleClick(e.currentTarget.innerText as string)}
@@ -32,7 +32,9 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
           </li>
           <li
             className={`border-l ${
-              active === "VerQu" ? "border-l-teal-300" : "border-l-slate-600"
+              active === "VerQu"
+                ? "border-l-teal-300 text-teal-300"
+                : "border-l-slate-600"
             } px-8 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
             onClick={(e) => handleClick(e.currentTarget.innerText as string)}
           >

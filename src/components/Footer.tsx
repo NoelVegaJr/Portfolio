@@ -3,7 +3,7 @@ import * as React from "react";
 interface IFooterProps {}
 
 const Footer: React.FunctionComponent<IFooterProps> = (props) => {
-  return;
+  return <div></div>;
 };
 
 export default Footer;
