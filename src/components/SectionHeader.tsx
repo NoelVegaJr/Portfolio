@@ -13,10 +13,10 @@ const SectionHeader: React.FunctionComponent<ISectionHeaderProps> = ({
   return (
     <header className="flex items-center gap-12 mb-10">
       <div className="flex gap-4">
-        <Index number={number} size="text-2xl" />{" "}
+        <Index number={number} size=" text-xl md:text-2xl" />{" "}
         <span className="font-bold text-slate-300 text-2xl">{title}</span>
       </div>
-      <div className="h-0.5 grow bg-slate-300" />
+      <div className="hidden md:block h-0.5 grow bg-orange-400" />
     </header>
   );
 };

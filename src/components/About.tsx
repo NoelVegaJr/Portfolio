@@ -10,7 +10,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
     <section className="flex flex-col" id="About">
       <SectionHeader number={1} title="About Me" />
       <div className="flex">
-        <div className="flex flex-col gap-4 w-3/5">
+        <div className="flex flex-col gap-4 w-full md:w-3/5">
           <p className="text-slate-400 pr-8">
             Hello! My name is Noel and I enjoy creating things that live on the
             the internet. My interest in web development started when in my
@@ -73,7 +73,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             </ul>
           </div>
         </div>
-        <div className="w-2/5">
+        <div className="hidden md:w-2/5">
           <Image
             src="/profile.jpg"
             alt="profile picture"

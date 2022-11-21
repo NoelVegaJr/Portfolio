@@ -9,7 +9,44 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
     <section id="Work">
       <SectionHeader number={3} title="Some apps I've Built" />
       <div className="flex flex-col gap-52">
-        <div className="relative flex h-fit">
+        <div className="flex flex-col gap-4">
+          <div>
+            <p className="text-teal-300 text-sm ">Featured Project:</p>
+            <p className="text-2xl font-bold text-slate-200">Code Fork</p>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-4 justify-between">
+            <div className="relative w-full h-72 md:96 rounded">
+              <Image
+                src="/codefork.png"
+                alt="CodeFork Landing Page"
+                className="absolute "
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <p className="text-slate-300 bg-slate-800 p-4 rounded text-sm">
+                A web app built upon the GitHub API. Developers can view their
+                code whithin multiple tabs and create documentation for their
+                code. If the repo is public the documentation will also be
+                public. With realtime chat features users can work together
+                build there docs. Users who are viewing docs and repos can ask
+                questions with other online users.
+              </p>
+              <ul className="text-xs flex flex-wrap gap-x-4 gap-y-2 text-orange-400">
+                <li>Typescript</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>GitHub API</li>
+                <li>Prisma</li>
+                <li>Railway SQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <div className="relative flex h-fit">
           <div className="w-1/2  ">
             <Image
               src="/codefork.png"
@@ -24,7 +61,7 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
               Featured Project
             </p>
             <p className="text-2xl font-bold text-slate-200 text-right mb-6">
-              Code Fork
+              Team &apos;n Plan
             </p>
             <p className="text-slate-400 bg-slate-800 p-4 rounded">
               A web app built upon the GitHub API. Developers can view their
@@ -62,34 +99,7 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
               other online users.
             </p>
           </div>
-        </div>
-        <div className="relative flex h-fit">
-          <div className="w-1/2  ">
-            <Image
-              src="/codefork.png"
-              alt="CodeFork Landing Page"
-              width={600}
-              height={500}
-              className="absolute "
-            />
-          </div>
-          <div className="w-1/2  z-10">
-            <p className="text-teal-300 text-sm text-right mb-2">
-              Featured Project
-            </p>
-            <p className="text-2xl font-bold text-slate-200 text-right mb-6">
-              Team &apos;n Plan
-            </p>
-            <p className="text-slate-400 bg-slate-800 p-4 rounded">
-              A web app built upon the GitHub API. Developers can view their
-              code whithin multiple tabs and create documentation for their
-              code. If the repo is public the documentation will also be public.
-              With realtime chat features users can work together build there
-              docs. Users who are viewing docs and repos can ask questions with
-              other online users.
-            </p>
-          </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

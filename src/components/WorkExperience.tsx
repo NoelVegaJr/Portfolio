@@ -18,14 +18,14 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
   return (
     <section id="Experience">
       <SectionHeader number={2} title="Where I've Worked" />
-      <div className="flex gap-8">
-        <ul className="text-slate-500 w-fit">
+      <div className="flex flex-col md:flex-row gap-4">
+        <ul className="text-slate-500 w-fit text-sm flex md:flex-col">
           <li
             className={`border-l ${
               active === "Relativity"
                 ? "border-l-teal-300 text-teal-300"
                 : "border-l-slate-600"
-            } px-8 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
+            } px-4 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
             onClick={(e) => handleClick(e.currentTarget.innerText as string)}
           >
             Relativity
@@ -35,7 +35,7 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
               active === "VerQu"
                 ? "border-l-teal-300 text-teal-300"
                 : "border-l-slate-600"
-            } px-8 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
+            } px-4 py-3 cursor-pointer hover:bg-slate-800 hover:text-teal-300 transition-all duration-300`}
             onClick={(e) => handleClick(e.currentTarget.innerText as string)}
           >
             VerQu
@@ -46,12 +46,12 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
             <div>
               <p className="mb-2">
                 <span className="text-slate-300">Service Delivery</span>{" "}
-                <span className="text-teal-300">@ Relativity</span>
+                <span className="text-orange-400">@ Relativity</span>
               </p>
               <p className="text-slate-400 mb-6">
                 October 2020 - November 2022
               </p>
-              <ul className="text-slate-400 flex flex-col gap-4">
+              <ul className="text-slate-400 flex flex-col gap-4 text-sm">
                 <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCaretRight}
@@ -84,7 +84,7 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
             <div>
               <p className="mb-2">
                 <span className="text-slate-300">Data Migration Engineer</span>{" "}
-                <span className="text-teal-300">@ VerQu</span>
+                <span className="text-orange-400">@ VerQu</span>
               </p>
               <p className="text-slate-400 mb-6">
                 February 2018 - October 2020
