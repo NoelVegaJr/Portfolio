@@ -17,14 +17,14 @@ export default function Home() {
         <div className="hidden lg:flex flex-col items-center gap-6  h-full justify-end fixed bottom-0">
           <ul className="flex flex-col items-center">
             <li className="cursor-pointer hover:-translate-y-2 transition-all duration-200 p-2 px-6 text-slate-400 hover:text-teal-400 rotate-90">
-              <Link href="www.github.com/NoelVegaJr" target="_blank">
+              <a href="www.github.com/NoelVegaJr" target="_blank">
                 <FontAwesomeIcon icon={faGithubAlt} className="" />
-              </Link>
+              </a>
             </li>
             <li className="cursor-pointer hover:-translate-y-2 transition-all duration-200 p-2 text-slate-400 hover:text-teal-400 rotate-90">
-              <Link href="https://www.linkedin.com/in/noelvegajr/">
+              <a href="https://www.linkedin.com/in/noelvegajr/">
                 <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="h-32 w-0.5  bg-slate-400 " />
