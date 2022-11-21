@@ -2,6 +2,7 @@ import * as React from "react";
 import Index from "./Index";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
+import HamburgerMenu from "./HamburgerMenu";
 interface INavbarProps {}
 
 const NavLink = ({
@@ -29,8 +30,8 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
       <AnchorLink href={`#Hero`} offset="275">
         <p className="text-teal-400">Noel Vega</p>
       </AnchorLink>
-
-      <ul className="flex gap-8 text-sm items-center gap-">
+      <HamburgerMenu />
+      <ul className="hidden md:flex gap-8 text-sm items-center">
         <NavLink number={1} text="About" offset={275} />
         <NavLink number={2} text="Experience" offset={275} />
         <NavLink number={3} text="Work" offset={100} />
