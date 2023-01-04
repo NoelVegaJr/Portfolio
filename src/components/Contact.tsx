@@ -1,12 +1,17 @@
 import * as React from "react";
-import { useState } from "react";
 import Modal from "./Modal";
 
-interface IContactProps {}
+interface IContactProps {
+  isOpen: boolean;
+  open: () => void;
+  close: () => void;
+}
 
-const Contact: React.FunctionComponent<IContactProps> = (props) => {
-  const [openContactForm, setOpenContactForm] = useState<boolean>(false);
-  console.log(openContactForm);
+const Contact: React.FunctionComponent<IContactProps> = ({
+  isOpen,
+  open,
+  close,
+}) => {
   return (
     <section
       id="Contact"
@@ -21,12 +26,12 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
         within 12 hours. Thanks for visiting 😄💖
       </p>
       <button
-        onClick={() => setOpenContactForm(true)}
+        onClick={open}
         className="border font-semibold border-teal-400 px-8 p-4 text-teal-400 w-fit rounded hover:bg-slate-800 mx-auto"
       >
         Say Hello
       </button>
-      {openContactForm && <Modal close={() => setOpenContactForm(false)} />}
+      {isOpen && <Modal close={close} />}
     </section>
   );
 };

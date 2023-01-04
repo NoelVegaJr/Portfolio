@@ -57,14 +57,33 @@ const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
                     icon={faCaretRight}
                     className="text-teal-400 text-sm mr-6"
                   />
-                  <p>Use powershell and sql to automate backend processes.</p>
+                  <p>
+                    Use powershell and sql to automate core migration solutions.
+                  </p>
                 </li>
                 <li className="flex">
                   <FontAwesomeIcon
                     icon={faCaretRight}
                     className="text-teal-400 text-sm mr-6"
                   />
-                  <p>Use powershell and sql to automate backend processes.</p>
+                  <p>Create pipelines from source to Azure blob storage.</p>
+                </li>
+                <li className="flex">
+                  <FontAwesomeIcon
+                    icon={faCaretRight}
+                    className="text-teal-400 text-sm mr-6"
+                  />
+                  <p>
+                    Run Sql queries and develop reports for compliance and
+                    team/client meetings.
+                  </p>
+                </li>
+                <li className="flex">
+                  <FontAwesomeIcon
+                    icon={faCaretRight}
+                    className="text-teal-400 text-sm mr-6"
+                  />
+                  <p>Creat API&apos;s for internal systems communications.</p>
                 </li>
                 <li className="flex">
                   <FontAwesomeIcon

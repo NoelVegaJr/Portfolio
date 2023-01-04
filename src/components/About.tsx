@@ -47,6 +47,20 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
                 />
                 React
               </li>
+              <li className=" flex items-center">
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className="text-teal-400 text-sm mr-2"
+                />
+                MySQL
+              </li>
+              <li className=" flex items-center">
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className="text-teal-400 text-sm mr-2"
+                />
+                Powershell
+              </li>
             </ul>
             <ul className="flex flex-col gap-2">
               <li className=" flex items-center">
@@ -69,6 +83,20 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
                   className="text-teal-400 text-sm mr-2"
                 />
                 Graph QL
+              </li>
+              <li className=" flex items-center">
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className="text-teal-400 text-sm mr-2"
+                />
+                Prisma
+              </li>
+              <li className=" flex items-center">
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className="text-teal-400 text-sm mr-2"
+                />
+                MSSQL
               </li>
             </ul>
           </div>
