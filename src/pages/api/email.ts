@@ -19,6 +19,5 @@ export default async function handler(
     </div>`,
   };
   const response = await sendgrid.send(msg);
-
-  return res.status(response[0].statusCode);
+  return res.send(response[0]);
 }

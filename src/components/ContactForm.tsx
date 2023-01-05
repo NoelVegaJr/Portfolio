@@ -3,30 +3,34 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import toast from "react-hot-toast";
 import { totalmem } from "os";
+import { json } from "stream/consumers";
 
-function sendEmail(contactInfo: {
+async function sendEmail(contactInfo: {
   name: string;
   email: string;
   phone: string;
   subject: string;
   message: string;
 }) {
-  fetch("api/email", {
+  const response = await fetch("api/email", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(contactInfo),
   });
-  return;
+  const data = await response.json();
+  return data;
 }
 
-interface IContactFormProps {}
+interface IContactFormProps {
+  close: () => void;
+}
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
-const ContactForm: React.FunctionComponent<IContactFormProps> = (props) => {
+const ContactForm: React.FunctionComponent<IContactFormProps> = ({ close }) => {
   return (
     <Formik
       initialValues={{ name: "", email: "", subject: "", message: "" }}
@@ -45,9 +49,15 @@ const ContactForm: React.FunctionComponent<IContactFormProps> = (props) => {
           .max(10000, "exceeded 10000 char limit")
           .required("required"),
       })}
-      onSubmit={(values: any) => {
-        sendEmail(values);
-        toast.success("Email sent");
+      onSubmit={async (values: any) => {
+        const response = await sendEmail(values);
+        console.log("response: ", response);
+        if (response.statusCode === 202) {
+          close();
+          toast.success("Email sent! Thanks for stopping by 😇");
+        } else {
+          toast.error("Email failed to send, try again");
+        }
       }}
     >
       {(props: any) => {

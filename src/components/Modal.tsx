@@ -31,7 +31,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({ close }) => {
   return (
     <BackDrop close={close}>
       <div onClick={(e) => e.stopPropagation()} className="max-w-md grow">
-        <ContactForm />
+        <ContactForm close={close} />
       </div>
     </BackDrop>
   );
