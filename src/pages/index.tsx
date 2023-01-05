@@ -16,8 +16,8 @@ export default function Home() {
     <div className=" bg-slate-900 h-full ">
       <Navbar />
       <div className="flex mt-16 grow px-4">
-        <div className="hidden lg:flex flex-col items-center gap-6  h-full justify-end fixed bottom-0">
-          <ul className="flex flex-col items-center">
+        <div className="hidden xl:flex flex-col items-center gap-6  h-full justify-end fixed bottom-0">
+          <ul className="flex flex-col items-center  ">
             <li className="cursor-pointer hover:-translate-y-2 transition-all duration-200 p-2 px-6 text-slate-400 hover:text-teal-400 rotate-90">
               <a
                 href="https://github.com/NoelVegaJr"
@@ -51,7 +51,7 @@ export default function Home() {
           </main>
         </div>
 
-        <div className="hidden lg:flex flex-col items-center gap-24 h-full justify-end fixed -right-10 bottom-0">
+        <div className="hidden xl:flex flex-col items-center gap-24 h-full justify-end fixed -right-10 bottom-0">
           <button
             onClick={() => setOpenContactForm(true)}
             className="text-slate-400 rotate-90 hover:text-teal-300 cursor-pointer"

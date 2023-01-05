@@ -1,3 +1,5 @@
+import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import Modal from "./Modal";
 
@@ -32,6 +34,23 @@ const Contact: React.FunctionComponent<IContactProps> = ({
         Say Hello
       </button>
       {isOpen && <Modal close={close} />}
+
+      <ul className="flex  items-center justify-center text-3xl text-slate-400 gap-10 mt-4 xl:hidden">
+        <li>
+          <a
+            href="https://github.com/NoelVegaJr"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithubAlt} className="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/noelvegajr/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+      </ul>
     </section>
   );
 };
