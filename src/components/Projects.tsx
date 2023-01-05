@@ -36,7 +36,8 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
                   Create the all in one collaboration/task app to reduce the
                   number of licenses companies pay when buying individual
                   seperate solutions and makes collaborating using these
-                  solution seamless under one solution.
+                  solutions seamless under one solution. V1.0 is planned to be
+                  released early April 2023
                 </p>
               </div>
               <div>
