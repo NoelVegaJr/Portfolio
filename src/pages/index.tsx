@@ -7,7 +7,6 @@ import WorkExperience from "../components/WorkExperience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {

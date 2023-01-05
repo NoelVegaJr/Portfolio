@@ -16,9 +16,9 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         </p>
         <p className="text-slate-500 font-bold">
           I&apos;m a software engineer specializing in building and designing
-          digital experiences. Currently am focused on Web app for developers
-          and teams to easily document there code called{" "}
-          <span className="text-orange-400 cursor-pointer">CodeFork</span>.
+          digital experiences. Currently am focused on a team collaboration web
+          app for teams both large and small called
+          <span className="text-orange-400 cursor-pointer">Orderly</span>.
         </p>
         <Link
           href="resume"
