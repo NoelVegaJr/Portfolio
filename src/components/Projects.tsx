@@ -16,13 +16,8 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div
-              className="relative w-full sm:52 md:h-full rounded "
-              // style={{ width: "750", height: "500" }}
-            >
+            <div className="relative w-full sm:52 md:h-full rounded ">
               <video
-                // width={"100%"}
-                // height="500"
                 controls
                 src="/OrderlyPreview.mp4"
                 className=" top-0 w-full h-full"
@@ -36,8 +31,9 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
                   Create the all in one collaboration/task app to reduce the
                   number of licenses companies pay when buying individual
                   seperate solutions and makes collaborating using these
-                  solutions seamless under one solution. V1.0 is planned to be
-                  released early April 2023
+                  solutions seamless under one product. Live beta will be
+                  released early March 2023. V1.0 is planned to be released
+                  early May 2023
                 </p>
               </div>
               <div>
